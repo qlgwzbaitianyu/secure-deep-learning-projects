@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+*.so
+*.o
+*.egg-info/
+.idea/
+.vscode/
+.DS_Store
+
+# Local datasets, checkpoints, and generated outputs
+models/
+checkpoints/
+outputs/
+results/
+logs/
+*.pth
+*.pt
+*.ckpt
+*.npy
+*.npz
+*.h5
+
+# Local experiment artifacts
+featuremap*.txt
+pred_anchor_locs*.txt

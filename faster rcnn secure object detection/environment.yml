@@ -1,0 +1,14 @@
+name: secure-pcnn-broken
+channels:
+  - pytorch
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.12
+  - pytorch=1.13.1
+  - torchvision=0.20.1
+  - pytorch-cuda=12.4
+  - pip
+  - pip:
+      - numpy==2.0.2
+      - PyYAML==5.4.1

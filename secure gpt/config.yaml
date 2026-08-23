@@ -1,0 +1,15 @@
+python: '3.12'
+pytorch: '1.13.1'
+torchvision: '0.20.1'
+torchaudio: '2.5.1'
+cuda: '12.4'
+device: 'cuda'
+vocab_size: 50257
+block_size: 1024
+n_embd: 768
+n_head: 12
+n_layer: 12
+dropout: 0.0
+epsilon: 1.0e-5
+share_scale: 1.0
+approximation_scale: 8.0

@@ -1,0 +1,10 @@
+runtime:
+  device: cuda
+  batch_size: 120
+  learning_rate: 0.01
+  epochs: 500
+  learning_rate_decay_start: 80
+  learning_rate_decay_every: 5
+  learning_rate_decay_rate: 0.9
+  weight_decay: 0.005
+  num_workers: 4

@@ -1,0 +1,21 @@
+smc:
+  bit_width: 8
+  rounding_offset: 0.5
+  signed: true
+  random_seed: null
+
+pcnn:
+  input_channels: 3
+  feature_channels: [64, 64, 128, 128, 256, 256, 512, 512]
+  conv_kernel_size: 3
+  conv_padding: 1
+  pool_kernel_size: 2
+  pool_stride: 2
+
+runtime:
+  device: cuda
+  dtype: float64
+  python: "3.12"
+  pytorch: "1.13.1"
+  torchvision: "0.20.1"
+  cuda: "12.4"

@@ -1,0 +1,6 @@
+torch==1.13.1
+torchvision==0.20.1
+torchaudio==2.5.1
+numpy==2.0.0
+opencv-python==4.10.0.84
+PyYAML==6.0.2

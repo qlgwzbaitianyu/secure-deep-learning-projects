@@ -1,0 +1,40 @@
+smc:
+  bit_width: 8
+  modulus_bits: 16
+  random_seed: null
+  share_min: 0
+  share_max: 127
+  pooling_kernel: 2
+  pooling_stride: 2
+
+segmentation:
+  input_channels: 3
+  output_channels: 2
+  convolution_kernel: 3
+  convolution_padding: 1
+  pooling_kernel: 2
+  pooling_stride: 2
+  base_channels: [64, 128, 256, 512]
+  activation_negative_slope: 0.2
+
+inpainting:
+  input_channels: 3
+  base_channels: 64
+  bottleneck_channels: 4000
+  convolution_kernel: 4
+  convolution_padding: 1
+
+image_removal:
+  dataset_root: ./datasets/data
+  dataset: voc
+  model: deeplabv3plus_mobilenet
+  output_stride: 16
+  batch_size: 16
+  validation_batch_size: 4
+  crop_size: 513
+  learning_rate: 0.01
+  weight_decay: 0.0001
+  total_iterations: 30000
+  workers: 2
+  gpu_id: '0'
+  seed: 1
